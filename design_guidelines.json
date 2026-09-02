@@ -1,0 +1,200 @@
+{
+  "project_title": "Traffic Safety Services Department Portal (TSSD)",
+  "app_type": "Government Information & Interactive Public Portal",
+  "theme_strategy": "Hybrid Light/Dark Public Safety Command aesthetic (Light theme default for ultimate civic trust and legibility, with high-contrast slate dark panels for command status and night road safety)",
+  "typography": {
+    "font_family_heading": "Cabinet Grotesk, Montserrat, sans-serif",
+    "font_family_body": "Plus Jakarta Sans, IBM Plex Sans, sans-serif",
+    "font_family_arabic_heading": "Amiri, Cairo, serif",
+    "font_family_arabic_body": "Readex Pro, Noto Sans Arabic, sans-serif",
+    "font_family_mono": "JetBrains Mono, Roboto Mono, monospace",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cabinet+Grotesk:wght@500;700;800;900&family=Cairo:wght@600;700;800&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_subsection": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4_card": "text-lg sm:text-xl font-semibold",
+      "body_lg": "text-base sm:text-lg leading-relaxed text-slate-700 dark:text-slate-300",
+      "body_default": "text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-400",
+      "caption": "text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-500",
+      "arabic_multiplier": "Increase font size by 1px and line-height by 1.25 for Arabic text to prevent diacritic clipping"
+    }
+  },
+  "colors": {
+    "palette_name": "Tactical Civic Shield & Signal Amber",
+    "primary_civic_navy": {
+      "hex": "#0F172A",
+      "hsl": "222 47% 11%",
+      "usage": "Headers, primary command bars, footer, structural authority frames"
+    },
+    "signal_amber_accent": {
+      "hex": "#D97706",
+      "hex_vivid": "#F59E0B",
+      "hsl": "38 92% 50%",
+      "usage": "Traffic warning indicators, interactive focus elements, active badges, call to action highlights"
+    },
+    "emergency_signal_red": {
+      "hex": "#DC2626",
+      "hsl": "0 72% 51%",
+      "usage": "High-priority alert banner, urgent road closure notices, emergency hotline CTAs"
+    },
+    "safety_emerald": {
+      "hex": "#059669",
+      "hsl": "160 84% 39%",
+      "usage": "Quiz success scores, open road status badges, campaign approved seals"
+    },
+    "surface_background": {
+      "light": "#F8FAFC",
+      "light_card": "#FFFFFF",
+      "dark": "#0B0F17",
+      "dark_card": "#1E293B"
+    },
+    "neutral_borders": {
+      "light": "#E2E8F0",
+      "dark": "#334155"
+    },
+    "contrast_rules": {
+      "normal_text_min_contrast": "4.5:1 (WCAG AA)",
+      "large_text_min_contrast": "3.0:1",
+      "hover_rule": "Always explicitly define hover text colors (e.g. hover:bg-amber-600 hover:text-white)"
+    }
+  },
+  "visual_enhancers": {
+    "tracing_beam": "Dynamic 1px animated highlight on urgent notice banners and quiz active cards",
+    "glassmorphism": "Used on sticky civic header with backdrop-blur-md bg-white/90 dark:bg-slate-900/90 and 1px border-slate-200/50",
+    "tactical_grid_borders": "1px crisp border lines (border-slate-200 dark:border-slate-800) for resource modules and statistics grids",
+    "subtle_grain": "Background noise SVG filter for hero section to give tactile public-sector document weight",
+    "arabic_rtl_support": "Full RTL mirror support via dir='rtl' attribute, custom Tailwind flex-row-reverse, space-x-reverse, and text-right overrides"
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1776075203483-8e0614b502bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHx0cmFmZmljJTIwc2FmZXR5JTIwcm9hZCUyMHBvbGljZSUyMGhpZ2h3YXklMjBkcml2aW5nJTIwaGVyb3xlbnwwfHx8fDE3ODgzNzE0MDV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Traffic controller directing cars on city street",
+      "usage": "Hero section background with dark gradient overlay (bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-900/40)"
+    },
+    "highway_patrol": {
+      "url": "https://images.unsplash.com/photo-1767619879597-17943ea7482a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwzfHx0cmFmZmljJTIwc2FmZXR5JTIwcm9hZCUyMHBvbGljZSUyMGhpZ2h3YXklMjBkcml2aW5nJTIwaGVyb3xlbnwwfHx8fDE3ODgzNzE0MDV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Traffic police officer sitting on a motorcycle",
+      "usage": "Safety Programs card image / Department Initiative showcase"
+    },
+    "city_traffic_night": {
+      "url": "https://images.unsplash.com/photo-1765773686941-9713064f73ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxjaXR5JTIwaGlnaHdheSUyMHRyYWZmaWMlMjBsaWdodHMlMjBhc3BoYWx0JTIwcm9hZCUyMG5pZ2h0fGVufDB8fHx8MTc4ODM3MTQxM3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Light trails on road at night",
+      "usage": "Public Safety Campaign banner / Smart Traffic Systems initiative"
+    },
+    "highway_interchange": {
+      "url": "https://images.unsplash.com/photo-1788145748859-477cf5b06ad3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxjaXR5JTIwaGlnaHdheSUyMHRyYWZmaWMlMjBsaWdodHMlMjBhc3BoYWx0JTIwcm9hZCUyMG5pZ2h0fGVufDB8fHx8MTc4ODM3MTQxM3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Elevated view of multi-lane highway",
+      "usage": "Resource Center header background / Road Infrastructure Safety guide"
+    },
+    "police_patrol_car": {
+      "url": "https://images.unsplash.com/photo-1667508048126-9e49dba89579?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHx0cmFmZmljJTIwc2FmZXR5JTIwcm9hZCUyMHBvbGljZSUyMGhpZ2h3YXklMjBkcml2aW5nJTIwaGVyb3xlbnwwfHx8fDE3ODgzNzE0MDV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Police car on street patrol",
+      "usage": "Emergency Hotlines section / Contact page visual accent"
+    }
+  },
+  "component_structure": {
+    "header": {
+      "elements": [
+        "Official Government Emblem & Title ('TSSD | Department of Traffic Safety Services')",
+        "Live Threat / Traffic Alert Ticker Bar",
+        "Navigation Links: Home, Safety Quiz, Initiatives, News, Resources, Contact",
+        "Language Switcher (EN / AR) with RTL direction trigger",
+        "Emergency Hotline Quick Access Trigger (999 / 911)"
+      ]
+    },
+    "hero_section": {
+      "elements": [
+        "Urgent Announcement Banner (Animated ticker with road closure / weather alerts)",
+        "Kinetic Hero Headline: 'Precision Safety on Every Road'",
+        "Live Safety Metrics Bar: '24/7 Road Surveillance | 98.4% Compliance Rate | 0 Speeding Incidents on School Zones Today'",
+        "Primary CTAs: 'Take Safety Knowledge Quiz' & 'Report Traffic Concern'",
+        "Search Bar: 'Search traffic laws, fines, child seat regulations, safety guides...'"
+      ]
+    },
+    "safety_quiz_widget": {
+      "title": "National Traffic Safety Knowledge Check",
+      "features": [
+        "Self-paced interactive quiz (5-10 scenario questions)",
+        "Immediate scored feedback with detailed legal/safety explanations",
+        "Badge / Certificate shareable card on 80%+ score",
+        "Filter questions by topic: Speed Limits, Child Seats, Pedestrian Priority, Roundabout Rules"
+      ]
+    },
+    "safety_programs": {
+      "title": "Active Department Initiatives & Campaigns",
+      "cards": [
+        "School Zone Zero-Speed Initiative",
+        "Child Safety Seat Fitting & Verification Stations",
+        "Nighttime Highway Pedestrian Visibility Campaign",
+        "Commercial Fleet Telematics & Safety Audits"
+      ]
+    },
+    "news_and_announcements": {
+      "title": "Official Bulletins, Regulations & Statistics",
+      "features": [
+        "Filterable by: Urgent Alerts, New Traffic Laws, Monthly Statistics, Press Releases",
+        "Search & date range picker",
+        "Downloadable PDF bulletins"
+      ]
+    },
+    "resource_center": {
+      "title": "Public Resource & Download Center",
+      "categories": [
+        "Driver Manuals & Handbooks",
+        "Child Seat Installation Guides",
+        "Traffic Fines & Regulation Schedule",
+        "School Transport Safety Protocols"
+      ]
+    },
+    "contact_and_emergency": {
+      "title": "Contact, Assistance & Direct Line",
+      "features": [
+        "Interactive Enquiry Form (saved in DB, viewable in admin portal)",
+        "24/7 Emergency Hotlines (Accidents, Road Hazards, Breakdown)",
+        "Interactive Headquarters Map & Office Hours",
+        "Direct Department Directory"
+      ]
+    },
+    "admin_enquiry_portal": {
+      "title": "Department Administrative Portal",
+      "features": [
+        "Secure Admin View for Enquiries & Citizen Reports",
+        "Filter by status: Pending, Under Investigation, Resolved",
+        "Export enquiry data to CSV",
+        "Analytics chart of enquiry types"
+      ]
+    }
+  },
+  "grids_and_layouts": {
+    "marketing_bento": "Asymmetric 12-column grid layout for Hero & Safety Programs (col-span-12 md:col-span-8 and col-span-4)",
+    "dashboard_grid": "Tight 4-column grid layout for Admin Enquiry Portal with stat cards and tabular records",
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-16 (Generous spacing to convey civic weight and legibility)"
+  },
+  "motion_and_interactions": {
+    "library": "framer-motion + lenis smooth scroll",
+    "stagger_children": "0.08s stagger on program cards and quiz options",
+    "quiz_animations": "Smooth slide transitions between questions and celebratory scale pulse on complete score",
+    "alert_ticker": "Infinite horizontal marquee ticker for public announcements using CSS keyframe or motion div"
+  },
+  "accessibility_and_rtl": {
+    "rtl_implementation": "Dynamic document HTML dir attribute toggle ('ltr' or 'rtl') driven by language context",
+    "arabic_fonts": "Readex Pro for UI body, Amiri for featured quotes and titles",
+    "touch_targets": "Minimum 44px x 44px for all buttons and interactive quiz options",
+    "test_id_policy": "All interactive elements, input fields, quiz choices, and submit buttons MUST include data-testid attribute"
+  },
+  "instructions_to_main_agent": [
+    "Build a complete React full-stack web app with FastAPI backend.",
+    "Ensure language switcher toggles seamlessly between English (LTR) and Arabic (RTL) with proper text translations for all sections.",
+    "Implement the Interactive Safety Quiz with multiple choice options, immediate feedback score, progress bar, and detailed legal explanation modal/card.",
+    "Ensure the contact form posts data to backend endpoint `/api/enquiries` and admin dashboard view `/admin` allows searching, filtering, and marking enquiries resolved.",
+    "Apply all fonts and styles specified in this guidelines document, using Cabinet Grotesk / Montserrat for EN headings, Readex Pro / Amiri for AR headings.",
+    "Include all testids specified in tests and follow data-testid naming conventions (`data-testid='...'`).",
+    "Verify that the header is sticky with glassmorphism blur (`backdrop-blur-md bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 z-50`)."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "anti_slop_rule": "Avoid generic Vercel/Inter dark mode slop. Use rich civic slate navy (#0F172A), signal ambers (#F59E0B), and crisp tactical borders to convey official government authority and public warmth.",
+    "accessibility": "Ensure full WCAG 2.1 AA compliance, high text contrast, accessible form labels, keyboard navigation for the quiz, and complete RTL layout support.",
+    "testing_attributes": "All buttons, inputs, tabs, quiz choices, language switches, and links MUST have data-testid attributes in kebab-case."
+  }
+}
